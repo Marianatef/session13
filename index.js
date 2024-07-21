@@ -40,9 +40,9 @@ const second = [
 ];
 
 function hasDuplicates(arr) {
-  const flattened = arr.flat(Infinity);
-  const set = new Set(flattened);
-  return set.size !== flattened.length;
+  const newArray = arr.flat(Infinity);
+  const set = new Set(newArray);
+  return set.size !== newArray.length;
 }
 
 console.log(hasDuplicates(second));
